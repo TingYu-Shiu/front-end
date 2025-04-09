@@ -109,12 +109,14 @@
     margin-bottom: 10px;
     width: 350px;
     height: 40px;
+    boder:none;
 }
 
 .tellme form textarea{
     width: 350px;
     height: 120px;
     margin-bottom: 10px;
+    boder:none;
 }
 
 
