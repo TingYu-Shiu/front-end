@@ -1,0 +1,150 @@
+.header{
+    background-image: url(../pic/course-banner.png);
+}
+
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.banner h2{
+    padding-top: 70px;
+    color: white;
+}
+
+.banner h3{
+    color: #00cc99;
+    font-size: 25px;
+}
+
+.banner .logo .img1{
+    margin-right: 20px;
+}
+
+.banner .logo .img2{
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.content{
+    padding-top:50px;
+    padding-bottom: 10px;
+    padding-left: 230px;
+    padding-right: 230px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+}
+
+.profile h2{
+    color:#00cc99 ;
+    font-size: 30px;
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.2;
+}
+
+.profile h2 span{
+    color: black
+}
+
+.profile ul{
+    padding-top: 45px;
+    color: rgb(177, 173, 173);
+    list-style: disc;
+    padding-left: 30px;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+.content .spot h2{
+    color: #00cc99 ;
+    padding-top: 50px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content .spot h2 span{
+    color: gray ;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.content .spot ol{
+    padding-left: 20px;
+    list-style: decimal;
+    line-height: 1.3;
+}
+
+.tbl h2{
+    padding-top:40px;
+    color: #00cc99 ;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.tbl span{
+    color: gray ;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.tbl table{
+    width:100%;
+}
+
+.tbl table tr td{
+    padding:18px 40px;
+}
+
+.tbl tr:nth-child(odd){
+    background-color: #ebebeb;
+}
+
+.tbl tr:nth-child(even){
+    color:#9b9b9b;
+}
+
+.formstyle{
+    width: 1024px;
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:#ebebeb ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between  ;
+}
+
+.formstyle a{
+    margin-top: 50px;
+    margin-right: 100px;
+    display: block;
+    color: white;
+    background-color: #00cc99;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.formstyle a:hover{
+    background-color: #8cd6c3;
+    color: black;
+    }
+
+.formstyle h2{
+    margin-left: 80px;
+    font-size: 25px;
+    line-height: 2;
+}

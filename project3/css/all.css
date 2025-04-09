@@ -1,0 +1,352 @@
+/*CSS reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*layout設計*/
+*,*:after,*:before{
+	box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrap{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.header{
+    background-image: url(../pic/index-banner.png);
+	height: 560px;
+	background-size: cover;
+	background-position: center;
+}
+
+.nav{
+    padding: 15px 35px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(74, 74, 74,0.5);
+    position: fixed;   /* 固定在視窗上 */
+    top: 0;            /* 距離頂部 0px */
+    width: 1024px;       /* 讓導航列寬度填滿整個視窗 */
+    z-index: 1000;
+}
+
+.nav .logo{
+	background-image: url(../pic/Logo.png);
+	width:170px;
+	height: 36px;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+
+}
+
+.nav ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav ul li{
+	padding-left: 20px;
+}
+
+.nav ul li a{
+	text-decoration: none;
+	color: white;
+	padding-bottom: 10px;
+}
+
+.nav ul li a:hover{
+	color:#00cc99;
+    border-bottom: 3px solid #00cc99;
+}
+
+.banner{
+	padding-top: 160px;
+	padding-left: 50px;
+}
+
+.banner h2{
+	color:#00cc99 ;
+	line-height: 1.5;
+	font-size: 40px;
+}
+
+.banner h2 span{
+	color: white;
+}
+
+.banner a{
+	margin-top: 80px;
+	display: block;
+	width: 180px;
+	height: 50px;
+	text-decoration: none;
+	color: white;
+	background: #00cc99 ;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 17px;
+}
+
+.banner a:hover{
+	background: #75c0ac;
+	color: black;
+}
+
+.content{
+	width: 1024px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.course{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.course .course-title{
+	display: flex;
+	justify-content: space-between;
+}
+
+.course .course-title h2{
+	margin-top: 30px;
+	color:#00cc99 ;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.course .course-title span{
+	color:gray ;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+.course .course-title a{
+	margin-top: 30px;
+	display: block;
+	text-decoration: none;
+	color:#00cc99 ;
+	width: 80px;
+	border: 2px solid #00cc99;
+	text-align: center;
+	padding-top: 2px;
+	margin-right: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.course .course-title a:hover{
+	background-color: #00cc99;
+	color: white;}
+
+
+.class-item ul{
+	display: flex;
+	justify-content: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	gap: 15px;
+}
+
+.class-item li{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	box-shadow: 0 0 5Px;
+
+}
+
+.class-item h3{
+	margin-top: 10px;
+	color: gray;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.class-item p{
+	text-align: center;
+	color: gray;
+	font-size: 15px;
+}
+
+.hex-form{
+	margin: 0 auto;
+	width: 1024px;
+}
+
+.course h2{
+	margin-top: 30px;
+	color:#00cc99 ;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.course span{
+	color:gray ;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+.course .tb tr{
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+
+}
+
+.course .tb tr th{
+	background: rgb(215, 208, 208);
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.course .tb tr td{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.tb{
+    margin: 0 auto;
+    width: 950px;
+    line-height: 1.5;
+	text-align: center;
+	line-height: 2;
+}
+
+.change{
+    color: #00cc99;
+}
+
+
+.hex-form{
+	width: 1024px;
+	padding: 50px;
+	padding-top: 100px;
+	margin: 0 auto;
+	background-color:rgb(215, 208, 208) ;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.hex-form h2{
+	font-size: 30px;
+	line-height: 1.5;
+}
+
+.hex-form form{
+	display: flex;
+	flex-direction: column;
+	align-items: self-end;
+}
+
+.hex-form .text{
+	width: 350px;
+	height: 40px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+.hex-form .submit{
+	width: 100px;
+}
+
+.submit{
+	display: block;
+	color: white;
+	background-color: #00cc99;
+	border: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.submit:hover{
+	background-color: #7ac1af;
+	color: black;	
+}
+
+.footer{
+	width: 1024px;
+	padding: 20px 40px;
+	margin: 0 auto;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer ul{
+	display: flex;
+	gap:10px
+}
+
+.footer ul li:hover{
+	background-color: #7ac1af;
+	display: block;
+	border-radius: 50%;
+}
