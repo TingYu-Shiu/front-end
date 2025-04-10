@@ -29,7 +29,14 @@
       text-decoration: none;
       color: #333;
       font-weight: 500;
+      padding-bottom: 10px;
     }
+
+    nav a:hover {
+      margin-top: 10px;
+      border-bottom: 2px solid #227e4a ;
+    }
+
     .hero {
       display: flex;
       align-items: center;
@@ -66,7 +73,7 @@
     }
     .skills, .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
       gap: 2rem;
     }
     .card {
@@ -93,6 +100,16 @@
       font-size: 0.95rem;
       color: #555;
     }
+
+    .card h3 a{
+      text-decoration: none;
+      color: blueviolet;
+    }
+
+    .card h3 a:hover{
+      color: yellowgreen;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -159,8 +176,8 @@
       </div>
       <div class="card">
         <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?w=800" alt="品牌網站"/>
-        <h3>個人品牌網站</h3>
-        <p>整合履歷、自傳與作品集的展示型網頁。</p>
+        <h3><a href="https://tingyu-shiu.github.io/front-end/project3/index.html">六角課程作業作品</a></h3>
+        <p>整合六角學院前端課程、介紹與FAQ的展示型網頁。</p>
       </div>
     </div>
   </section>
