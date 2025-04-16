@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*,*:after,*:before{
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar{
+    width: 1650px;
+    background-color: #b9afafd7;
+    padding: 10px;
+    position: sticky;   /* 固定在視窗上 */
+    top: 0;            /* 距離頂部 0px */
+    left: auto;
+    width: 1650px;       /* 讓導航列寬度填滿整個視窗 */
+    z-index: 1000;
+}
+
+.bar ul{
+    display: flex;
+    justify-content: end;}
+
+.bar li{
+    padding-right: 10px;
+}
+
+.FB a{
+    font-size: 25px;
+    color: #4460a0;
+    text-decoration: none;
+}
+
+.TW a{
+    font-size: 25px;
+    color: #00aaec;
+    text-decoration: none;
+    padding-left: 10px;
+    border-left: 4px solid lightgrey;
+}
+
+.bar ul li a:hover{
+    font-weight: bold;
+}
+
+.content{
+    width: 1650px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #cdd6c7de;
+    justify-content: space-between;
+    position: sticky;   /* 固定在視窗上 */
+    top: 45px;            /* 距離頂部 0px */
+    width: 1650px;       /* 讓導航列寬度填滿整個視窗 */
+    z-index: 1000;
+}
+
+.intro{
+    display: flex;
+}
+
+.intro li a{
+    display: block;
+    text-decoration: none;
+    width: 120px;
+    border: 1px solid black ;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.intro{
+    position: relative;
+    top:25px;
+    right: 0;
+ }
+
+.test ul{
+    position: absolute;
+    background: #aabcb8;
+    display: none;
+}
+
+.test1 ul{
+    position: absolute;
+    background: #aabcb8;
+    display: none;
+}
+
+.intro a:hover, .intro a.active{
+    color: white;
+    background-color: blue;
+}
+
+.logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(../images/logo.png);
+    width: 224px;
+    height: 50px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.banner{
+    position: relative;
+}
+
+.banner h2{
+    position: absolute;
+    color: white;
+    top: 250px;
+    left: 300px;
+    display: block;
+    font-size: 45px;
+    line-height: 1.2;
+    z-index: 9999;
+    
+}
+
+.content2{
+    width:700px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.content2 ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.content2 ul li{
+    padding: 50px;
+    box-shadow:0px 0px 10px gray;
+    margin: 30px;
+}
+
+.content2 ul li h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.content2 ul li p{
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.table{
+    margin-bottom: 50px;
+}
+
+.table h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.price{
+    margin: 0 auto;
+    width: 1300px;
+    line-height: 1.5;
+}
+
+.price th,.price td{
+    border-top: 1px solid #9b9b9b;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.price th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    background: #9b9b9b;
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.price td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+.green{
+    color: #00cc99;
+}
+
+
+.footer{
+    position: relative;
+    margin: 0 auto;
+}
+
+.footer .png{
+    margin-top: 20px;
+    margin: 0 auto;
+    background: linear-gradient(#aabcb8,#31c49f);
+    width: 1650px;
+    height: 455px;
+}
+
+.footer h2{
+    padding-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #00251a;
+    font-weight: bold;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.form2{
+    width: 350px;
+    height: 43px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border:black;
+    font-size: 17px;
+}
+
+.form4{
+    margin-top:10px;
+    width: 350px;
+    height: 210px;
+    border:black;
+}
+
+.form1{
+    font-size: 20px;
+}
+
+
+.form3{
+    font-size: 20px;
+}
+
+.submit{
+    position: absolute;
+    top:395px;
+    left: 880px;
+    width: 150px;
+    height: 35px;
+    background-color: #000;
+    color: #d5f7ef;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: blueviolet;
+}
+
+.footer2{
+    width: 1650px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.footer2 img{
+    margin-right:550px;
+}
+
+.footer2 h3{
+    margin-right: 300px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.color{
+    color: #00cc99;
+}
+
+.top a{
+    width:250px;
+    background: blue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.swiper {
+	width: 1650px;
+    height: 700px;
+  }
+
+.top {
+    display: none;
+  }
